@@ -37,7 +37,7 @@ body{
 /* header section */
 
 header{
-  position: fixed;
+  position: fixed, relative;
   top: 0;
   right: 0;
   width: 100%;
@@ -52,10 +52,16 @@ header{
   background: #11131150;
 }
 
+.menu-bar i{
+visibility: hidden;
+position: absolute;
+}
+
 .logo{
   color: var(--main-color);
   font-weight: 600;
   font-size: 2.4rem;
+  position: absolute;
 }
 
 .logo span{
@@ -64,6 +70,9 @@ header{
 
 .navbar{
   display: flex;
+  position: absolute;
+right: 0;
+padding-right: 70px;
  
 }
 
@@ -377,12 +386,12 @@ cursor: pointer;
 
   .portfolio-container{
 
-
     margin-top: 50px;
 
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-gap: 30px;
+    justify-content: center;
+    grid-gap: 20px;
   }
 
   .portfolio-container h3{
@@ -422,7 +431,7 @@ cursor: pointer;
   margin:30px 0;
     }
 
-  .contact{
+  .contact-conatiner{
 
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -515,5 +524,246 @@ cursor: pointer;
   }
 
   /* media queries */
+  /* --dextop: 1200px;
+  --laptop: 992px;
+  --tablet: 768px;
+  --phone: 460px; */
+
+
+  @media screen and (max-width: 740px){
+
+    body p {
+
+      font: 0.5px;
+      
+
+    }
+
+    .header{
+      width: 100%;
+    }
+    header .logo{
+      position: absolute;
+      right: 530px;
+
+    }
+
+    header .navbar{
+      position: absolute;
+      left: 230px;
+      
+    }
+
+    .home{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home-text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 40px;
+
+    }
+
+    .about{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-text{
+      order: 0;
+
+      text-align: center;
+
+    }
+
+    .about-img{
+      order: 1;
+
+    }
+
+    .service-container{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+    .portfolio-container{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 50px;
+
+    }
+
+    .logo{
+      position: absolute;
+      left: 20px;
+font-size: 2rem;
+    }
+
+    .contact-conatiner{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .contact-box{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-form{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .forms{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu-bar i{
+      visibility: visible;
+      position: absolute;
+      padding-left: 100px;
+      font-size: 26px;
+      }
+
+      .menu-bar {
+     margin-bottom: 20px;
+      }
+   
+
+   .navbar{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 460px){
+
+    .home-text h1{
+
+      font-size:3.5rem;
+    }
+
+    .home img{
+
+      border-radius: 10px;
+    }
+
+    .about img{
+      border-radius: 10px;
+    }
+
+    .header{
+      width: 100%;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+
+ .contact-box .icons{
+  padding-left: 20px;
+  font-size: 7px;
+ 
+  
+  }
+
+  .box{
+
+    height: 230px;
+    width: 260px;
+    position: relative;
+
+  }
+
+  .box h3{
+
+    font-size: 10px;
+    margin-bottom: 25px;
+  }
+
+  .box i{
+    font-size: 30px;
+
+    height:  250px;
+    width: 170;
+    padding: 10px 0;
+
+
+  }
+
+  .port-box{
+    
+    width: 290px;
+  }
+
+  .port-box img{
+
+    width: 290px;
+
+  }
+
+  /* .port-box{
+    width: 100px;
+  } */
+
+  .info-input{
+    width: 250px;
+    margin-right:40px;
+  }
+
+  .email-input{
+    margin-right:40px;
+  }
+
+  .number-input{
+    margin-right:40px;
+  }
+
+  .contact-form .btn{
+
+    margin-right:40px;
+
+  }
+
+  footer{
+    font-size: 12px;
+   
+  }
+
+  footer p{
+    margin-left: 50px;
+  }
+
+  footer .btn{
+    display: none;
+   
+  }
+
+  .service{
+    margin-top: 60px;
+  }
 
   
+
+}
