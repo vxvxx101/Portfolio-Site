@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="main.css" />
     <title>My portfolio site</title>
+    <script src="/script.js"></script>
     <script src="https://kit.fontawesome.com/93ee4e1f06.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,18 +16,21 @@
     <!-- header -->
     <header>
       <a class="logo" href="">P<span>o</span>rtflio</a>
-      <div class="bx bx-menu" id="menu-icon"></div>
-
-      <ul class="navbar">
+      <a href="" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+      <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
+        <li><a href="#">About</a></li>
         <li><a href="#">Service</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <div class="menu-bar">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </div>
+    </div>
+   
       
 
     </header>
@@ -39,7 +43,7 @@
         <p>
           a junior level web developer with a year experience.<br />
           I have a unique set of skills that can help you create beautiful
-          and functional websites. My skills in design and coding can help
+          and functional landing pages. My skills in design and coding can help
           bring my clients' visions to life and create engaging user
           experiences.
         </p>
@@ -60,7 +64,7 @@
       <div class="about-text">
         <span>About Me</span>
         <h4>Creative Front End Web developer</h4>
-        <p>check out my 4 web projects, i deliver beutiful and reponsive landing websites and pages. </p>
+        <p>check out my 4 web projects, i deliver beautiful and reponsive landing websites and pages. </p>
         <p>Also as a graphics designer, i have a keen eye for detail and a strong sense of aesthetics. </p>
         <a href="#" class="btn">Learn More</a>
       </div>
@@ -77,14 +81,14 @@
         <div class="box">
           <i class="fa fa-code" aria-hidden="true"></i>
           <h2>web development</h2>
-          <h3>My way to categorize the activities is in terms of proffesional area of expertise such as competitive analysis, corperate startegy</h3>
+          <h3>My way to categorize the activities is in terms of proffesional area of expertise such as competitive analysis, corperate startegy.</h3>
           <a href="#" class="btn">Read More</a>
         </div>
 
         <div class="box">
           <i class="fa fa-mobile" aria-hidden="true"></i>
           <h2>Graphics design</h2>
-          <h3>My way to categorize the activities is in terms of proffesional area of expertise such as competitive analysis, corperate startegy</h3>
+          <h3>My way to categorize the activities is in terms of proffesional area of expertise such as competitive analysis, corperate startegy.</h3>
           <a href="#" class="btn">Read More</a>
         </div>
         </div>
@@ -112,7 +116,7 @@
           </div>
           <div class="layer">
             <h3>E-Commerce Website</h3>
-            <p>A web page for an E-commerce site</p>
+            <p>A landing page for an E-commerce site</p>
           </div>
         </div>
 
@@ -122,7 +126,7 @@
           </div>
           <div class="layer">
             <h3>Food & Restaurant Website.</h3>
-            <p>A basic Food & Restaurnat web page</p>
+            <p>A Food & Restaurnat landing web page</p>
           </div>
         </div>
 
@@ -142,7 +146,7 @@
           </div>
           <div class="layer">
             <h3>Synctec log-in page</h3>
-            <p>Gaming website log in page</p>
+            <p>Gaming website log-in page</p>
           </div>
         </div>
       </div>
@@ -154,11 +158,11 @@
       <div class="contact-conatiner">
       <div class="contact-box">
         <h4>Contact <span>Me!</span> </h4>
-        <h3>If you hava any project in mind</h3>
+        <h3>If you have any project in mind</h3>
 
         <p>
-          i'm en entry level front end developer - creating beutiful landing
-          pages for companys all over the world
+          i'm en entry level front end developer - creating beautiful landing
+          pages for clients all over the world
         </p>
 
         <p>08149174659</p>
@@ -215,6 +219,14 @@
 
 
 
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+      menubar = document.querySelector("menubar");
+      menubar.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+      }
+        
+
+    </script>
   </body>
 </html>
