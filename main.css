@@ -647,6 +647,13 @@ cursor: pointer;
       margin: 15px 0;
     }
 
+
+    .navbar-links li a{
+
+      color: var(--sec-bg-color);
+
+    }
+
     .showmenu{
       transform: translate(0);
     }
@@ -682,9 +689,11 @@ cursor: pointer;
       transform: scale(2);
     }
     
-    .icons {
+   .contact-conatiner .icons {
 
  display: flex;
+ justify-content: center;
+ align-items: center;
     }
 
     .icons i{
