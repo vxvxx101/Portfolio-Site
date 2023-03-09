@@ -323,10 +323,10 @@ align-items: center;
 
 .box i{
 
-  font-size: 20px;
+  font-size: 30px;
   background-color: var(--bg-color);
-  width: 50px;
-  height: 36px;
+  width: 60px;
+  height: 50px;
   display: flex;
   justify-content: center;
   border-radius: 5px;
@@ -647,7 +647,10 @@ cursor: pointer;
       margin: 15px 0;
     }
 
+    .navbar-links li a:visited{
+      color: var(--sec-bg-color);
 
+    }
     .navbar-links li a{
 
       color: var(--sec-bg-color);
@@ -856,11 +859,11 @@ font-size: 2rem;
     margin-bottom: 25px;
   }
 
-  .box i{
+  .service-container .box i{
     font-size: 30px;
 
-    height:  250px;
-    width: 170;
+    height:  60px;
+    width: 60px;
     padding: 10px 0;
 
 
