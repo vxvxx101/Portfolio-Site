@@ -831,15 +831,11 @@ font-size: 2rem;
  
 
 
- /* .contact-conatiner .icons  i{
-margin-left: 250px;
- 
-  
-  } */
 
   .box{
 
     height: 260px;
+    
     width: 280px;
     position: relative;
 
@@ -872,16 +868,7 @@ margin-left: 250px;
 
   }
 
-  .box .btn{
 
-
-    /* margin-bottom: 0px; */
-
-  }
-
-  /* .port-box{
-    width: 100px;
-  } */
 
   .info-input{
     width: 250px;
