@@ -595,6 +595,14 @@ cursor: pointer;
       
 
     }
+    .contact-box p{
+    text-align: center;
+        }
+
+        .contact-box h3{
+
+          text-align: center;
+        }
 
     header{
       width: 100%;
