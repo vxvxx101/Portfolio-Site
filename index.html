@@ -6,31 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="main.css" />
     <title>My portfolio site</title>
-    <script src="/script.js"></script>
-    <script src="https://kit.fontawesome.com/93ee4e1f06.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Fugaz+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- header -->
     <header>
       <a class="logo" href="">P<span>o</span>rtflio</a>
-      <a href="" class="toggle-button">
+
+
+      <!-- <a href="" id="toggle-button" class ="toggle-button"> -->
+
+
+
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </a>
-      <div class="navbar-links">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul id="navbar-links" class="navbar-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
-   
+
+    <div id="menu-btn"><i class="fa-solid fa-bars"></i></div>
+  
       
 
     </header>
@@ -71,7 +77,7 @@
     </section>
 
     <!-- Services section-->
-    <section class="service" id="menu">
+    <section class="service" id="service">
       <div class="heading">
         <span>Services</span>
         <h4>My Service</h4>
@@ -86,7 +92,7 @@
         </div>
 
         <div class="box">
-          <i class="fa fa-mobile" aria-hidden="true"></i>
+          <i class="fa-regular fa-pen-to-square"></i>
           <h2>Graphics design</h2>
           <h3>My way to categorize the activities is in terms of proffesional area of expertise such as competitive analysis, corperate startegy.</h3>
           <a href="#" class="btn">Read More</a>
@@ -170,11 +176,11 @@
         <p>Valentinedike1@gmail.com</p>
 
         <div class="icons">
-          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+          <a href="#"><i class="fa-brands fa-skype"></i></a>
         </div>
       </div>
       <div class="contact-form">
@@ -216,17 +222,7 @@
 
       <a href="#top" class="btn">&uarr;</a>
     </footer>
-
-
-
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
-      menubar = document.querySelector("menubar");
-      menubar.onclick = function() {
-        navBar = document.querySelector(".nav-bar");
-        navBar.classList.toggle("active");
-      }
-        
-
-    </script>
+    <script src="script.js" defer></script>
   </body>
 </html>
+s
